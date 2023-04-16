@@ -1,26 +1,26 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
+
 import "../lib/ERC20.sol";
 import "../container/Contained.sol";
 
+/**
+    @title HeartToken
+    @dev defines an ERC20 token to mint tokens and burn tokens
+    @author abhaydeshpande
+ */
+
 contract HeartToken is ERC20, Contained {
-    fallback() external {
-        revert();
-    }
-
-    receive() external payable {
-        revert();
-    }
-
     string private _name;
     uint8 private _decimals;
     string private _symbol;
-    string public version = "H1.0";
 
     constructor() public {
         _name = "Heart Token"; // Set the name for display purposes
         _decimals = 0; // Amount of decimals for display purposes
         _symbol = "HEART"; // Set the symbol for display purposes
     }
+
     function name() public view returns (string memory) {
         return _name;
     }
@@ -37,6 +37,8 @@ contract HeartToken is ERC20, Contained {
         external
         onlyContract(CONTRACT_LOAN_MANAGER)
     {
+        require(buyer != address(0), "Invalid address");
+        require(value > 0, "Invalid value");
         _mint(buyer, value);
     }
 
@@ -44,7 +46,9 @@ contract HeartToken is ERC20, Contained {
         external
         onlyContained()
     {
-        require(balanceOf(remover) >= value, "not enough token to burn");
+        require(remover != address(0), "Invalid address");
+        require(value > 0, "Invalid value");
+        require(balanceOf(remover) >= value, "Not enough token to burn");
         _burn(remover, value);
     }
 }

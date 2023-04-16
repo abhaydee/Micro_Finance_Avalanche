@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 
 import "../auth/Owned.sol";
@@ -26,7 +27,7 @@ contract Contained is Owned, ContractNames {
     modifier onlyContract(string memory name) {
         require(address(container) != address(0), "No Container");
         address allowedContract = container.getContract(name);
-        assert(allowedContract != address(0));
+        require(allowedContract != address(0), "Invalid contract name");
         require(
             msg.sender == allowedContract,
             "Only specific contract can access"

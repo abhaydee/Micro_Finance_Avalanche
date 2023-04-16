@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 import "../lib/SafeMath.sol";
 import "../database/LoanDB.sol";
@@ -6,6 +7,11 @@ import "../container/Contained.sol";
 import "./Wallet.sol";
 
 
+/**
+    @title LoanManager
+    @dev manages the lending and repayment of loans, and rewards users with HeartToken for participating.
+    @author abhaydeshpande
+ */
 contract LoanManager is Contained {
     using SafeMath for uint256;
     enum LoanState {REQUESTED, FUNDED, PAID}
