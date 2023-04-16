@@ -36,24 +36,6 @@ Smart Contract : Solidity
 On Chain Database : Avalanche Blockchain
 Off Chain Database : Firebase
 
-
-
-#### Request Loan
-
-![](./documentation/image/sequenceRequest.png)
-
-#### Lend Loan
-
-![](./documentation/image/sequenceLend.png)
-
-#### Pay Loan
-
-![](./documentation/image/sequencePayment.png)
-
-#### Redeem coupon
-
-![](./documentation/image/sequenceRedeem.png)
-
 ## Data Storage
 
 ### On-Chain
@@ -101,17 +83,12 @@ All user information and debt details are stored in Firebase Database.
 
 ### DeMicroFi contracts was designed based on upgradable pattern.
 
-![](./documentation/image/upgradablePattern.png)
-
-### DeMicroFi contracts
-
-![](./documentation/image/contractarchitecture.png)
 
 ### Deployments
 
 Network : Avalanche C1 FUJI TestNet
 
-Deployed and Published Contract Addresses with ThirdWeb on , FUJI TestNet Network: [Link](https://thirdweb.com/0x56Fa4e35bA598B423ACe534891594266F06F16E3)
+Deployed and Published Contract Addresses with ThirdWeb on , FUJI TestNet Network: [Link](https://thirdweb.com/0x915D90876db81e9140421b91db658Cd6164a7475)
 
 ## Future Goals
 
@@ -135,3 +112,21 @@ Deployed and Published Contract Addresses with ThirdWeb on , FUJI TestNet Networ
 
 
 
+Testing the smart contracts 
+
+Step 1 : Install Ganache (https://trufflesuite.com/ganache/)
+
+Step 2 : Configure the Truffle Config file to connect to Ganache local environment 
+
+Step 3 : Run "truffle test" to test the smart contract
+
+
+Setting up project on local machine : 
+
+Step 1 : NodeJS Installation 
+
+Step 2 : Have an npm or yarn libary installed on the machine 
+
+Step 3 : install the dependencies using npm install or yarn add (Inside client as well as on the root folder of the repository)
+
+Step 4 : Inside the Client folder, run "npm start" or "yarn start" to connect to localhost and run the project.
