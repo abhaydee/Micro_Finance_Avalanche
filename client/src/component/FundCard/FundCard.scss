@@ -1,0 +1,119 @@
+.fund_item {
+  display: flex;
+  width: 35rem;
+  height: 30rem;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-light-1);
+  flex-direction: column;
+  justify-content: space-between;
+  justify-self: center;
+  font-size: 1.7rem;
+  animation: fadeOutDown 1s linear;
+}
+@keyframes fadeOutDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fund_item_title {
+  background-color: var(--color-blue-sky);
+  text-align: center;
+  text-transform: uppercase;
+
+  font-weight: bold;
+  padding: 1.5rem;
+  img {
+    width: 2rem;
+    height: 2rem;
+    float: right;
+    cursor: pointer;
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(2);
+    }
+  }
+}
+
+.fund_item_reason {
+  span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  text-align: start;
+  padding: 1rem;
+
+  font-style: italic;
+}
+
+.fund_item_money {
+  position: relative;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: "";
+    height: 100%;
+    width: 3rem;
+    position: absolute;
+    top: 0;
+    background-color: #fbbb12;
+    left: -15px;
+    opacity: 0.75;
+  }
+
+  span {
+    z-index: 1;
+    color: black;
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+.fund_item_btn {
+  width: 100%;
+  outline: none;
+  position: relative;
+  padding: 1.5rem;
+  background-color: var(--color-orange-dark);
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  color: var(--color-grey-dark-1);
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 750%;
+    width: 140%;
+    background: var(--color-pink-dark);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform: translateX(-90%) translateY(-10%) rotate(35deg);
+    transform: translateX(-80%) translateY(-10%) rotate(35deg);
+  }
+
+  &:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-35%) rotate(60deg);
+  }
+
+  &:hover span {
+    color: var(--color-white);
+  }
+}

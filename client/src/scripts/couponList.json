@@ -1,0 +1,72 @@
+[
+  {
+    "id": "CHATTIME",
+    "image": "https://chatimecafe.com/data/images/products/lrg0551441001404723264.jpg",
+    "title": "Free large-size Milk Tea",
+    "enddate": "30-04-2020",
+    "amount": 10
+  },
+  {
+    "id": "CINEPLEX",
+    "image": "https://i.cbc.ca/1.4680275.1527465428!/fileImage/httpImage/image.png_gen/derivatives/16x9_780/cineplex-recliner-auditorium.png",
+    "title": "Free regular ticket",
+    "enddate": "01-05-2020",
+    "amount": 15
+  },
+  {
+    "id": "H&M",
+    "image": "https://www.thebubble.com/wp-content/uploads/colorado-denver-downtown-1561879.jpg",
+    "title": "20% off for online shopping",
+    "enddate": "05-05-2020",
+    "amount": 20
+  },
+  {
+    "id": "UNIQLO",
+    "image": "https://www.shoppermind.com/wp-content/uploads/2017/05/www.altaviawatch.comwp-contentuploads201705Uniqlo-wants-to-double-EU-store-count-by-2020-a6f2baa2508de8e8d542665a9d6017519cd3fded.jpg",
+    "title": "10% off for online shopping",
+    "enddate": "05-05-2020",
+    "amount": 20
+  },
+  {
+    "id": "BBQ",
+    "image": "https://i.ytimg.com/vi/j0t0PPy7UL4/maxresdefault.jpg",
+    "title": "Free a fried pork belly dish",
+    "enddate": "05-05-2020",
+    "amount": 20
+  },
+  {
+    "id": "ZARA",
+    "image": "https://cms.qz.com/wp-content/uploads/2019/09/RTX6REQP-e1568226612202.jpg?quality=75&strip=all&w=1600&h=900&crop=1",
+    "title": "20% off for summer clothes",
+    "enddate": "05-05-2020",
+    "amount": 20
+  },
+  {
+    "id": "UncleTetsu",
+    "image": "https://images.dailyhive.com/20180512092114/31386503_1778177105593376_4795545115873509376_n.jpg",
+    "title": "Free one cheese Cake",
+    "enddate": "05-05-2020",
+    "amount": 20
+  },
+  {
+    "id": "Pho",
+    "image": "https://www.simplyrecipes.com/wp-content/uploads/2017/02/2017-02-07-ChickenPho-13.jpg",
+    "title": "Free one beef Pho",
+    "enddate": "05-05-2020",
+    "amount": 20
+  },
+  {
+    "id": "Sushi",
+    "image": "https://www.nippon.com/en/ncommon/contents/japan-data/169591/169591.jpg",
+    "title": "20% off for take-out sushi",
+    "enddate": "05-05-2020",
+    "amount": 20
+  },
+  {
+    "id": "IceCream",
+    "image": "https://d2cbg94ubxgsnp.cloudfront.net/Pictures/2000x2000fit/4/0/8/132408_shutterstock_406445776.jpg",
+    "title": "20% off for online shopping",
+    "enddate": "05-05-2020",
+    "amount": 20
+  }
+]

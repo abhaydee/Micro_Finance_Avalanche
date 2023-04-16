@@ -1,0 +1,56 @@
+@import "../../assets/sass/mixins";
+.coupon {
+  text-align: center;
+}
+.coupon__banner {
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  @include respond(phone) {
+    height: auto;
+  }
+}
+.coupon__balance {
+  font-family: "Bebas Neue", cursive;
+  font-size: 5rem;
+  @include respond(phone) {
+    font-size: 4rem;
+  }
+  span {
+    color: var(--color-pink-dark);
+  }
+  display: flex;
+  flex-direction: column;
+  &::after {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: var(--color-orange-dark);
+    margin: 10px auto;
+  }
+}
+.coupon__tab {
+  font-size: 10rem;
+}
+.MuiTab-root {
+  min-width: 50% !important;
+  font-size: 2rem !important;
+  font-weight: bold !important;
+}
+.Mui-selected {
+  color: var(--color-pink-dark) !important;
+}
+.MuiTabs-indicator {
+  background-color: var(--color-pink-dark) !important;
+}
+
+.coupon__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 5rem 5rem;
+  margin: 0 auto;
+  span {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
